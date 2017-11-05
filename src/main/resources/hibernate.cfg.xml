@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+        <property name="hibernate.connection.url">
+            jdbc:mysql://127.0.0.1/ordering_system
+        </property>
+        <property name="connection.username">
+            root
+        </property>
+        <property name="connection.password">
+
+        </property>
+
+        <!--DB schema will be updated if needed -->
+        <!--<property name="hbm2ddl.auto">create</property>-->
+
+        <mapping class="com.optp.db.entities.User"/>
+        <mapping class="com.optp.db.entities.Address"/>
+        <mapping class="com.optp.db.entities.Contact"/>
+        <mapping class="com.optp.db.entities.City"/>
+        <mapping class="com.optp.db.entities.Area"/>
+        <mapping class="com.optp.db.entities.Block"/>
+        <mapping class="com.optp.db.entities.Menu"/>
+        <mapping class="com.optp.db.entities.Product"/>
+        <mapping class="com.optp.db.entities.ProductSku"/>
+    </session-factory>
+</hibernate-configuration>
