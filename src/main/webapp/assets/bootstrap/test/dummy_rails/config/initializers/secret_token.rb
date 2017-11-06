@@ -11,8 +11,8 @@
 # if you're sharing your code publicly.
 token = '4380f36fda304251bf48f12ad4474b6d11447f1f959bd5b77a5d56c92b97f4c403ee0ae13d31a85ed88058ff8795bf31ec17e70e5c229b3707a77a2ee7e81cc'
 
-if Dummy::Application.config.respond_to?(:secret_key_base=)
-  Dummy::Application.config.secret_key_base = token
+if Dummy::Application.com.optp.config.respond_to?(:secret_key_base=)
+  Dummy::Application.com.optp.config.secret_key_base = token
 else
-  Dummy::Application.config.secret_token = token
+  Dummy::Application.com.optp.config.secret_token = token
 end

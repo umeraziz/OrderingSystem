@@ -65,16 +65,16 @@ Require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
 
 #### Bower with Rails
 
-When using [bootstrap-sass Bower package](#c-bower) instead of the gem in Rails, configure assets in `config/application.rb`:
+When using [bootstrap-sass Bower package](#c-bower) instead of the gem in Rails, configure assets in `com.optp.config/application.rb`:
 
 ```ruby
 # Bower asset paths
 root.join('vendor', 'assets', 'bower_components').to_s.tap do |bower_path|
-  config.sass.load_paths << bower_path
-  config.assets.paths << bower_path
+  com.optp.config.sass.load_paths << bower_path
+  com.optp.config.assets.paths << bower_path
 end
 # Precompile Bootstrap fonts
-config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
+com.optp.config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
 # Minimum Sass number precision required by bootstrap-sass
 ::Sass::Script::Value::Number.precision = [8, ::Sass::Script::Value::Number.precision].max
 ```
@@ -111,7 +111,7 @@ $ gem install bootstrap-sass
 
 If you have an existing Compass project:
 
-1. Require `bootstrap-sass` in `config.rb`:
+1. Require `bootstrap-sass` in `com.optp.config.rb`:
 
     ```ruby
     require 'bootstrap-sass'

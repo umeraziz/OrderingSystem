@@ -86,10 +86,10 @@ $(document).ready(function () {
         return false;
     });
 
-    // Append config box / Only for demo purpose
+    // Append com.optp.config box / Only for demo purpose
     // Uncomment on server mode to enable XHR calls
-    $.get("skin-config.html", function (data) {
-        if (!$('body').hasClass('no-skin-config'))
+    $.get("skin-com.optp.config.html", function (data) {
+        if (!$('body').hasClass('no-skin-com.optp.config'))
             $('body').append(data);
     });
 

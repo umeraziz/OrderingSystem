@@ -25,11 +25,11 @@ Capybara.register_driver :poltergeist do |app|
   )
 end
 
-Capybara.configure do |config|
-  config.app_host = 'http://localhost:7000'
-  config.default_driver    = :poltergeist
-  config.javascript_driver = :poltergeist
-  config.server_port       = 7000
-  config.default_max_wait_time = 10
+Capybara.configure do |com.optp.config|
+  com.optp.config.app_host = 'http://localhost:7000'
+  com.optp.config.default_driver    = :poltergeist
+  com.optp.config.javascript_driver = :poltergeist
+  com.optp.config.server_port       = 7000
+  com.optp.config.default_max_wait_time = 10
 end
 

@@ -7,7 +7,7 @@ Gemfile.lock
 .rvmrc
 .rbenv-version
 
-# Ignore bundler config
+# Ignore bundler com.optp.config
 /.bundle
 /vendor/cache
 /vendor/bundle

@@ -16,7 +16,7 @@
     <link href="<c:url value="/assets/inspinia/css/style.css"/>" rel="stylesheet">
     <jsp:invoke fragment="stylesheet"/>
 </head>
-<%--<body class="md-skin no-skin-config">--%>
+<%--<body class="md-skin no-skin-com.optp.config">--%>
 <body>
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">

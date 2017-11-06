@@ -87,7 +87,7 @@ task :dummy_rails do
   port = ENV['PORT'] || 9292
   puts %Q(Starting on #{Term::ANSIColor.cyan "http://localhost:#{port}"})
   Rack::Server.start(
-    config: 'test/dummy_rails/config.ru',
+    com.optp.config: 'test/dummy_rails/com.optp.config.ru',
     Port: port)
 end
 

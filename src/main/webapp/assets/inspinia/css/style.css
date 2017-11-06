@@ -6714,7 +6714,7 @@ body.landing-page {
       border: none; } }
 
 body.rtls {
-  /* Theme config */ }
+  /* Theme com.optp.config */ }
   body.rtls #page-wrapper {
     margin: 0 220px 0 0; }
   body.rtls .nav-second-level li a {
@@ -6891,7 +6891,7 @@ body.rtls .top-navigation .footer.fixed, body.rtls.top-navigation .footer.fixed 
 
 /*
  *
- *   This is style for skin config
+ *   This is style for skin com.optp.config
  *   Use only in demo theme
  *
 */
